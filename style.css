@@ -12,6 +12,7 @@ header {
     display: flex;
     justify-content: center; /*Align items horizontaly*/
     align-items: center; /*Align items verticaly*/
+    text-align: center; /*Aligns text to center when window is minimized*/
 }
 
 section {
