@@ -1,0 +1,62 @@
+/*Reset browser attributes*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    letter-spacing: 0.075rem;
+}
+
+header {
+    min-height: 10vh;
+    display: flex;
+    justify-content: center; /*Align items horizontaly*/
+    align-items: center; /*Align items verticaly*/
+}
+
+section {
+    display: flex;
+    justify-content: center; /*Align items horizontaly*/
+    align-items: center; /*Align items verticaly*/
+    flex-direction: column;
+
+    min-height: 85vh;
+}
+
+#random-message {
+  text-align: center;
+  min-height: 5rem;
+  margin: 0 1rem;
+}
+
+button {
+    background-color: transparent; /*Resets background color of button*/
+    
+    border: 0.15rem solid black; /*Adjusts border color*/
+    border-radius: 0.5rem; /*Adjusts border radius*/
+
+    height: 3rem; /*Adjusts button height*/
+    width: 8rem; /*Adjusts button width*/
+
+    color: black; /*Text color*/
+    font-weight: bold; /*Font weight*/
+    font-size: 1rem; /*Font size*/
+    
+    transition: ease-in 0.4s;
+}
+
+button:hover {
+  background-color: gray;
+  transition: ease-in 0.4s;
+  color: whitesmoke;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between; /*Align items horizontaly*/
+    align-items: center; /*Align items verticaly*/
+    min-height: 5vh;
+
+    margin: 0 1rem;
+}
+
