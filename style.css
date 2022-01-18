@@ -7,27 +7,59 @@
     letter-spacing: 0.075rem;
 }
 
+body {
+    /*Background gradient*/
+    background-color: #e7eff9;
+    background-image: linear-gradient(315deg, #e7eff9 0%, #cfd6e6 74%);
+}
+
+
 header {
     min-height: 10vh;
     display: flex;
     justify-content: center; /*Align items horizontaly*/
     align-items: center; /*Align items verticaly*/
     text-align: center; /*Aligns text to center when window is minimized*/
+
+    /*Text gradient*/
+    background-color: #2f4353;
+    background: -webkit-linear-gradient(315deg, #000000 0%, #aecad6 74%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /*Border Around the text*/
+    -webkit-text-stroke-width: 0.03rem;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+
+    /*Shadow*/
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
 }
 
 section {
     display: flex;
     justify-content: center; /*Align items horizontaly*/
     align-items: center; /*Align items verticaly*/
-    flex-direction: column;
+    flex-direction: column; /*Align items in column*/
 
-    min-height: 85vh;
+    min-height: 80vh;
 }
 
 #random-message {
   text-align: center;
-  min-height: 5rem;
-  margin: 0 1rem;
+  min-height: 6.5rem; /*Responsible for button to stay in place*/
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+
+  display: flex;
+  justify-content: center; /*Align items horizontaly*/
+  align-items: center; /*Align items verticaly*/
+
+  border-radius: 0.5rem; /*Adjusts border radius*/
+
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
 }
 
 button {
@@ -42,13 +74,15 @@ button {
     color: black; /*Text color*/
     font-weight: bold; /*Font weight*/
     font-size: 1rem; /*Font size*/
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     
-    transition: ease-in 0.4s;
+    transition: ease-in 0.2s;
 }
 
-button:hover {
+button:active, button:hover {
   background-color: gray;
-  transition: ease-in 0.4s;
+  transition: ease-in 0.2s;
   color: whitesmoke;
 }
 
@@ -56,8 +90,16 @@ footer {
     display: flex;
     justify-content: space-between; /*Align items horizontaly*/
     align-items: center; /*Align items verticaly*/
-    min-height: 5vh;
+    min-height: 10vh;
 
-    margin: 0 1rem;
+    padding: 0 1rem;
+
+    box-shadow: rgba(10, 37, 64, 0.35) 0px -2px 6px 0px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+    
+}
+
+footer a {
+    color: black;
 }
 

@@ -20,3 +20,5 @@ function randomMessage() {
 
     htmlTag.innerHTML = output;
 };
+
+randomMessage();
